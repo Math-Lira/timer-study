@@ -3,7 +3,7 @@ import Logo from '../../assets/logo.svg'
 import { Scroll, Timer } from 'phosphor-react'
 import { NavLink } from 'react-router-dom'
 
-export function Header() {
+export function GlobalHeader() {
   return (
     <HeaderContainer>
       <img src={Logo} alt="logo" />
