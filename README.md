@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# ⏱️ Timer Study
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **New project released!**  
+This is a personal productivity app built with **React + TypeScript**, focused on helping users manage their study sessions through a simple and elegant timer system.
 
-Currently, two official plugins are available:
+## 🧩 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+With this app, you can define a task and duration, start a countdown, and track your session. After finishing (or interrupting) a cycle, the session is saved in a **history list**, showing:
+- ✅ Task name
+- ⏳ Duration
+- 🕒 Start time
+- 📌 Status: `Completed ✅`, `Interrupted ❌`, or `In progress 🔄`
 
-## Expanding the ESLint configuration
+💡 **Interface highlights:**  
+The UI is modern, dark-themed, and fully responsive. Built to maintain focus, with intuitive buttons, smooth animations, and a clean dashboard for tracking all your study sessions.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔁 **Note:**  
+After starting a timer, the current session must be **interrupted** before starting a new one. This ensures correct data logging and prevents session overlap.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+✨ **Extra detail:**  
+The **remaining time is displayed in the browser tab** (page title), so you can keep track even when switching tabs — great for avoiding distractions!
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧠 Tech Stack
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **React** + **TypeScript**
+- **Styled Components** for component styling
+- **React Router DOM** for page routing
+- **React Context API** for global state management
+- **Redux** + **Immer** for immutable list management
+- **React Hook Form** for form handling
+- **Zod** + **Hook Resolver** for data validation
+- **localStorage** for persistent session data
+
+---
+
+## ▶️ How to Run the Project
+
+1. **Clone the repository:**
+
+
+```bash
+git clone https://github.com/Math-Lira/timer-study.git
+cd timer-study
+
+npm install
+# ou
+yarn install
+
+---
+
+## ✍️ Author
+
+Developed by **Matheus Lira**.  
+[GitHub - @Math-Lira](https://github.com/Math-Lira)
