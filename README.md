@@ -47,10 +47,3 @@ cd timer-study
 npm install
 # ou
 yarn install
-
----
-
-## ✍️ Author
-
-Developed by **Matheus Lira**.  
-[GitHub - @Math-Lira](https://github.com/Math-Lira)
